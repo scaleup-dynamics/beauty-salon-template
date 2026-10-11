@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --brand-primary: #E8B4B8;
+  --brand-primary-hover: #D99FA4;
+  --brand-accent: #2D1B2E;
+  --brand-accent-hover: #1E121F;
+  --brand-background: #FAF7F5;
+  --brand-surface: #FFFFFF;
+  --brand-text: #1A1A1A;
+  --brand-text-muted: #6B6562;
+  --brand-border: #EAE3DF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  background-color: var(--brand-background);
+  color: var(--brand-text);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.font-sans {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
+/* Custom smooth transitions */
+.transition-smooth {
+  transition: all 250ms cubic-bezier(0.16, 1, 0.3, 1);
+}
